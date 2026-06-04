@@ -35,10 +35,10 @@
             .teachers-section h2 { font-size: 36px; }
             .teachers-section { padding: 60px 20px !important; }
 
-            .features {
+            /*.features {
                 height: auto; /* Allows the section to expand based on content */
-                padding: 40px 20px; /* Adjusts padding for smaller screens */
-            }
+                /*padding: 40px 20px; /* Adjusts padding for smaller screens 
+            }*/
 
         }
         
