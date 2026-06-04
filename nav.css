@@ -91,13 +91,13 @@ nav {
   }
 
   .features{
-        /*position: relative;*/
+        position: relative !important;
         height: 150vh !important;
         opacity: 1;
         visibility: visible;
         overflow: visible;
-        /*padding-top: 60px Space for fixed nav 
-        padding-bottom: 60px;*/
+        top: 0 !important;
+        /*padding-bottom: 60px;*/
     }
 
     .hero{
