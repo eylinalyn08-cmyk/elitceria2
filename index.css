@@ -7,7 +7,7 @@
             position: sticky;
             top: 80px; /* Offset this so it doesn't hide behind your 70px tall nav bar */
             background-color: var(--primary-color); /* Add background so content doesn't overlap messily */
-            z-index: 10;       
+            z-index: 0;       
             box-shadow: 0 -20px 40px rgba(0,0,0,0.05); /* Adds separation when intro scrolls away */         
         }
         .features h1 {
