@@ -1,47 +1,4 @@
-/* Index.html */    
-    /* Introduction Section Styling */
-        .intro {
-            padding: 100px 20px;
-            background-color: white;
-            text-align: center;
-            position: relative; /* Scrolls away normally */
-            position: relative;
-            z-index: 5; /* This ensures it slides OVER the fading hero */
-            margin-top: -50px; /* Optional: slight overlap for a smoother look */
-        }
-        .intro-content {
-            max-width: 800px;
-            margin: 0 auto;
-            font: poppins;
-        }
-        .intro h2 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-        .intro p {
-            font-size: 20px;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        /* Responsive Design */
-    @media (max-width: 768px) {
-            nav { flex-direction: column; gap: 15px; text-align: center;}
-            .hero h1 { font-size: 36px; }
-            .hero p { font-size: 18px; }
-            .intro h2 { font-size: 28px; }
-            .intro p { font-size: 16px; }
-            .teachers-section h2 { font-size: 36px; }
-            .teachers-section { padding: 60px 20px !important; }
-
-            /*.features {
-                height: auto; /* Allows the section to expand based on content */
-                /*padding: 40px 20px; /* Adjusts padding for smaller screens 
-            }*/
-
-        }
-        
+/* Index.html */  
         .features {
             height: 600px;
             padding: 50px 20px;
@@ -50,7 +7,7 @@
             position: sticky;
             top: 80px; /* Offset this so it doesn't hide behind your 70px tall nav bar */
             background-color: var(--primary-color); /* Add background so content doesn't overlap messily */
-            z-index: 0;       
+            z-index: 10;       
             box-shadow: 0 -20px 40px rgba(0,0,0,0.05); /* Adds separation when intro scrolls away */         
         }
         .features h1 {
@@ -211,3 +168,19 @@
     position: sticky;
     /*top: 80px;*/
 }
+/* Responsive Design */
+    @media (max-width: 768px) {
+            nav { flex-direction: column; gap: 15px; text-align: center;}
+            .hero h1 { font-size: 36px; }
+            .hero p { font-size: 18px; }
+            .intro h2 { font-size: 28px; }
+            .intro p { font-size: 16px; }
+            .teachers-section h2 { font-size: 36px; }
+            .teachers-section { padding: 60px 20px !important; }
+
+            /*.features {
+                height: auto; /* Allows the section to expand based on content */
+                /*padding: 40px 20px; /* Adjusts padding for smaller screens 
+            }*/
+
+        }
