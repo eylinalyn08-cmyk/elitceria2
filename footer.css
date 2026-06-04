@@ -1,0 +1,69 @@
+/* Footer Section */
+.main-footer {
+    background-color: var(--secondary-color);
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.footer-container {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px 20px;
+    color: var(--bg-color);
+    font-weight: lighter;
+    font-size: 15px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.footer-col h3 {
+    color: var(--bg-color);
+    font-size: 1.4rem;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.footer-col a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;    /* Centers items horizontally */
+    justify-content: center; /* Ensures vertical centering if there is extra height */
+    text-align: center;     /* Centers the text within the elements */
+    padding: 40px 20px;     /* Adds some breathing room */
+    /*border-top: 1px solid rgba(0,0,0,0.05); Optional: subtle line to separate from columns */
+    width: 100%;            /* Ensures it takes the full width to center correctly */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centers the icons inside their container */
+    gap: 25px;
+    margin: 15px 10px; /* Adds spacing around the icons */;
+    object-fit: contain;
+}
+
+/* Hover effects */
+.social-icons a:hover {
+    transform: translateY(-8px) scale(1.2); /* Bounces up and grows slightly */
+    filter: brightness(1.2) drop-shadow(0 0 5px rgb(255, 238, 0));
+}
+
+.footer-bottom h4, .footer-bottom p {
+    margin: 5px 0; /* Tightens the spacing between text elements */
+    font-size: 1.2rem;
+}
+.social-icons a {
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+.social-icons a:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}

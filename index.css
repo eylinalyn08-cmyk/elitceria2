@@ -1,0 +1,213 @@
+/* Index.html */    
+    /* Introduction Section Styling */
+        .intro {
+            padding: 100px 20px;
+            background-color: white;
+            text-align: center;
+            position: relative; /* Scrolls away normally */
+            position: relative;
+            z-index: 5; /* This ensures it slides OVER the fading hero */
+            margin-top: -50px; /* Optional: slight overlap for a smoother look */
+        }
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font: poppins;
+        }
+        .intro h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .intro p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+    @media (max-width: 768px) {
+            nav { flex-direction: column; gap: 15px; text-align: center;}
+            .hero h1 { font-size: 36px; }
+            .hero p { font-size: 18px; }
+            .intro h2 { font-size: 28px; }
+            .intro p { font-size: 16px; }
+            .teachers-section h2 { font-size: 36px; }
+            .teachers-section { padding: 60px 20px !important; }
+
+            .features {
+                height: auto; /* Allows the section to expand based on content */
+                padding: 40px 20px; /* Adjusts padding for smaller screens */
+            }
+
+        }
+        
+        .features {
+            height: 600px;
+            padding: 50px 20px;
+            text-align: center;
+            margin: 0 auto;
+            position: sticky;
+            top: 80px; /* Offset this so it doesn't hide behind your 70px tall nav bar */
+            background-color: var(--primary-color); /* Add background so content doesn't overlap messily */
+            z-index: 0;       
+            box-shadow: 0 -20px 40px rgba(0,0,0,0.05); /* Adds separation when intro scrolls away */         
+        }
+        .features h1 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            font-display: block;
+            color: wheat;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+
+        .features p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+        }
+
+        .features h3 {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+        
+.card {
+    position: relative;
+    overflow: hidden; /* Ensures the background image doesn't spill out */
+}
+
+/*.enrollment-bg {
+    position: absolute;
+    background-repeat: repeat;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    object-fit: cover;}
+
+.enrollment-cta {
+    padding: 300px 20px;
+    /*background-image: 'image/1.jpeg';*/
+    /*background-color: white; /* Contrast against the page background */
+    /*text-align: center;
+    /* This ensures it clears any floated elements */
+    /*clear: both;
+    
+}*/
+
+.enrollment-section {
+    padding: 100px 20px;
+    background-color: var(--bg-color);
+    text-align: center;
+    position: sticky;
+}
+
+.enrollment-card {
+    max-width: 90%;         /* Limits the width so it doesn't span the whole screen */
+    width: 90%;               
+    height: auto;             /* Let the height adjust based on content */
+    margin: 20px auto;        /* Centers the card with some space top/bottom */
+    
+    /* Background Styles */
+    background-image: url('images/bg4.png');
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: darken;        
+    background-size: cover;   /* Ensures the background image fills the area */
+    background-position: center;
+
+    /* Sizing & Spacing */
+    padding: 40px 20px;       /* Reduced padding: 40px top/bottom, 20px sides */
+    
+    /* Decoration */
+    border-radius: 20px;      /* Slightly smaller radius for a smaller card */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border: 3px dashed var(--primary-color); 
+    text-align: center;       /* Centers any text inside the card */
+}
+
+.enrollment-card h2 {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: var(--bg-color);
+    font-size: 4rem;
+    font-weight: bolder;
+    text-shadow: #000000 1px 1px 0; /* Adds a subtle outline for better readability */
+    margin-bottom: 15px;
+}
+.enrollment-card p {
+    font-size: 30px;
+    text-shadow: black 1px 1px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.cert-item {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-bottom: 5px solid #ff0000; /* Mint green accent */
+    transition: transform 0.3s ease;
+}
+
+.cert-item:hover {
+    transform: translateY(-5px);
+}
+
+.cert-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.cert-item h3 {
+    color: #ff6b6b; /* Soft red for headings */
+    margin-bottom: 15px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;;
+}
+
+.cert-item p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.cert-item strong {
+    color: #333;
+}
+
+.teachers-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;;
+    color: var(--primary-color);
+}
+
+.teachers-section {
+    background-color: #e2ffe4; /* Light sky blue background */
+    padding: 80px 20px;
+    text-align: center;
+    position: sticky;
+    /*top: 80px;*/
+}

@@ -1,0 +1,171 @@
+/* ==========================================================================
+   1. Base Styles & Desktop Navigation
+   ========================================================================== */
+/* Hide the desktop navigation by default (on mobile screens) */
+.desktop-nav {
+  display: none;
+}
+
+/* Base navigation block styles */
+nav {
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
+/* Hide the icon by default on desktop screens */
+.mobile-only-toggle {
+  display: none;
+}
+
+
+/* ==========================================================================
+   2. Mobile View Layout & Header (Up to 768px wide)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  #mySidenav {
+    display: block; 
+  }
+  
+  .mobile-only-toggle {
+    display: inline-block;
+  }
+  
+  /* Container layout */
+  .mobile-header {
+    display: flex;
+    align-items: center;       
+    justify-content: flex-start; 
+    gap: 30px;                 
+    padding: 10px 15px;        
+    background-color: white;
+    /* Crucial changes for top fixation */
+    position: fixed;           /* Locks the header in place relative to the screen */
+    top: 0;                    /* Aligns it perfectly to the absolute top edge */
+    left: 0;                   /* Aligns it to the left edge */
+    width: 100%;               /* Forces the bar to span the full viewport width */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow below the header */
+    z-index: 999;              /* Keeps it layered safely above your normal page content */
+    box-sizing: border-box;    /* Ensures padding doesn't push the header past 100% width */
+  }
+
+  /* Adjust logo size so it fits perfectly next to the icon */
+  .main-logo {
+    height: 40px; /* Increased from 10px so you can see it clearly */
+    width: auto;
+    display: block;
+  }
+
+  .features{
+        position: relative;
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+        overflow: visible;
+        padding-top: 60px; /* Space for fixed nav */
+        padding-bottom: 60px;
+    }
+
+    .hero{
+        position: relative;
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+        overflow: visible;
+        padding-top: 60px; /* Space for fixed nav */
+        padding-bottom: 60px;
+    }
+}
+
+
+/* ==========================================================================
+   3. Desktop View Overrides (769px wide or more)
+   ========================================================================== */
+@media screen and (min-width: 769px) {
+  .mobile-header {
+    display: none;
+  }
+  
+  .desktop-nav {
+    display: flex; /* Activates and shows the layout strictly on desktop */
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+/* ==========================================================================
+   4. Side Drawer Mechanics
+   ========================================================================== */
+.sidenav {
+  height: 100%;
+  width: 0;                  
+  position: fixed;
+  z-index: 9999;             
+  top: 0;
+  left: 0;
+  background-color: #ffffff; 
+  overflow-x: hidden;
+  transition: 0.3s;          
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 900px) {
+  .sidenav { padding-top: 15px; }
+  .sidenav a { font-size: 18px; }
+}

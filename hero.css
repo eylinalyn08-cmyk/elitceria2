@@ -1,0 +1,157 @@
+/* Hero Section */
+.hero, .hero-about, .hero-program{
+    position: relative;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    object-fit: cover;}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.hero-content h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+           /* text-shadow: #000000 2px 2px 0, #ffd70f 4px 4px 0, #ffd70f 6px 6px 0;*/
+        }
+.hero-p { 
+    background-color: #7e2121;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-button {
+    margin-top: 40px;
+    background-color: transparent;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.cta-button2 {
+    margin-top: 40px;
+    background-color: rgb(207, 49, 49);
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.cta-button:hover, .cta-button2:hover {
+    transform: translateY(-3px) scale(1.05);
+    background-color: #005f05;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+    border-bottom: 10px solid #ffd70f;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/*.cta-container {
+    background-image: url('image/bg2.png');
+    max-width: 800px;
+    margin: 0 auto;
+}*/
+.enrollment-cta h2 {
+    color: rgb(255, 255, 255); /* Green for a "Go" feel */
+    margin-bottom: 10px;
+    font-size: 70px;
+}
+
+.enrollment-cta p {
+    color: rgb(255, 255, 255); /* Green for a "Go" feel */
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    /* 1. Shrink the Hero height */
+    .hero {
+        background: url('images/bg.MP4') center/cover no-repeat;
+        height: 40vh !important; /* vh = view height. 40vh is 40% of the screen */
+        min-height: 300px;      /* Prevents it from getting TOO tiny */
+        margin-top: 90px;       /* Keeps space for your fixed nav */
+    }
+
+    /* 2. Adjust the Video background to fit the new height */
+    .hero-video {
+        height: 100% !important;
+        object-fit: cover;      /* Ensures video fills the smaller box without squishing */
+        width: 100% !important;
+    }
+
+    /* 3. Shrink the Text so it fits in the smaller box */
+    .hero-content h1 {
+        font-size: 1.8rem !important;
+        margin-bottom: 10px;
+    }
+
+    .hero-content p {
+        font-size: 1rem !important;
+        padding: 0 10px;
+        line-height: 1.2;
+    }
+
+    /* 4. Make the Button smaller */
+    .cta-button {
+        padding: 10px 20px !important;
+        font-size: 0.9rem !important;
+    }
+}

@@ -1,0 +1,28 @@
+/* Hide by default on desktop screens */
+#backToTopBtn {
+  display: none;
+}
+
+/* Show and style only on mobile screens */
+@media screen and (max-width: 768px) {
+  #backToTopBtn {
+    position: fixed;         /* Floats independently over your webpage content */
+    bottom: 20px;            /* Placed 20px from the bottom edge */
+    right: 20px;             /* Placed 20px from the right edge */
+    z-index: 99;             /* Sits cleanly on top of text and images */
+    border: none;
+    outline: none;
+    background-color: var(--primary-color, #ff6b6b); /* Matches your brand theme color */
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;      /* Forces the button shape into a perfect circle */
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    transform: rotate(-90deg); /* Rotates the horizontal arrow to point upward */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Gives it a clean floating look */
+    align-items: center;
+    justify-content: center;
+  }
+}

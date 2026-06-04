@@ -1,0 +1,129 @@
+/* --- Programs Section Layout --- */
+.classes-section, .enrichment-section {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Fredoka One', cursive; /* Kindergarten style title */
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: var(--primary-color, #ff6b6b);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+/* Card container spacing */
+.class-card {
+    flex: 0 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.class-card:hover {
+    transform: translateY(-10px);
+}
+
+/* The Rectangle Wrapper */
+.image-wrapper {
+    position: relative;
+    width: 100%;           /* Fills the card width */
+    height: 500px;         /* Fixed height for a rectangle look */
+    border-radius: 20px;   /* The "Curved Corner" - adjust this for more/less curve */
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 5px solid #ffd70f; 
+    background: #f0f0f0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Ensure the Video/Image fills the rectangle */
+.card-video, .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This prevents the video from stretching */
+    transition: transform 0.5s ease;
+}
+
+/* The Blurred Hover Overlay (Adjusted for Rectangle) */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 15px; */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 15px; /* Matches the wrapper curve slightly inward */
+}
+
+.card-overlay p {
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* --- Hover States --- */
+.class-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.class-card:hover .card-video, 
+.class-card:hover img {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* --- Card Titles --- */
+.class-card h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* --- Color Variations for Borders (Optional) --- */
+.class-card:nth-child(2) .image-wrapper { border-color: #4ecdc4; } /* Mint green */
+.class-card:nth-child(3) .image-wrapper { border-color: #ff6b6b; } /* Pink/Red */
+
+/* --- Mobile Fixes --- */
+@media screen and (max-width: 900px) {
+    .image-wrapper {
+        width: 220px; /* Slightly smaller on mobile */
+        height: 220px;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,192 @@
+.about-header {
+    background-image: url('images/banner-bg.jpg');
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Content Sections */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .box {
+            background: rgb(255, 251, 240);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-bottom: 5px solid var(--secondary-color);
+			font: shoika;
+			font-size:20px;
+            transition: transform 0.3s ease;
+        }
+        .box:hover {
+            transform: translateY(-10px);
+        }
+
+        .box h2 { color: var(--secondary-color); margin-top: 0;}
+
+/* General About Section Layout */
+.about-section {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+/* CTA Section Styling */
+.cta-section {
+    padding: 100px 20px;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+.cta-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px 30px;
+    border-radius: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border: 3px dashed var(--accent-color); /* Playful school border */
+}
+
+.cta-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.cta-card h2 {
+    font-family: 'Fredoka One', cursive;
+    color: var(--primary-color);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.cta-card p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+/* Button Group Styling */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: #25D366; /* WhatsApp Green */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+    .mission-vision { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+    .timeline { flex-direction: column; }
+}
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .cta-buttons { flex-direction: column; }
+    .cta-card { padding: 30px 20px; }
+}
+
+/* Our Story Styles */
+.story-content {
+    text-align: center;
+}
+
+.since-badge {
+    background: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.timeline-item {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background: #FFF9F9;
+    border-radius: 15px;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.timeline-item .year {
+    font-family: 'Fredoka One', cursive;
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Testimonial Styles */
+.testimonial-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-left: 8px solid var(--accent-color);
+}
+.stars {
+    margin-bottom: 15px;
+}
+
+.parent-name {
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
