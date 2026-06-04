@@ -1,12 +1,12 @@
 /* Hero Section */
 .hero, .hero-about, .hero-program{
     position: relative;
-    height: 900px;
+    height: 80vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 100px;
+    overflow: hidden;
 }
 
 .hero-video {
@@ -49,6 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .cta-button {
@@ -127,7 +128,7 @@
         background: url('images/bg.MP4') center/cover no-repeat;
         height: 40vh !important; /* vh = view height. 40vh is 40% of the screen */
         min-height: 300px;      /* Prevents it from getting TOO tiny */
-        margin-top: 90px;       /* Keeps space for your fixed nav */
+        margin-top: 10px;       /* Keeps space for your fixed nav */
     }
 
     /* 2. Adjust the Video background to fit the new height */

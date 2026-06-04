@@ -46,6 +46,7 @@
     padding: 100px 20px;
     background-color: var(--bg-color);
     text-align: center;
+    position: sticky;
 }
 
 .cta-card {
