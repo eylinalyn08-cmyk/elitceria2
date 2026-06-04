@@ -126,9 +126,9 @@
     /* 1. Shrink the Hero height */
     .hero {
         background: url('images/bg.MP4') center/cover no-repeat;
-        height: 20vh !important; /* vh = view height. 40vh is 40% of the screen */
+        height: 60vh !important; /* vh = view height. 40vh is 40% of the screen */
         min-height: 300px;      /* Prevents it from getting TOO tiny */
-        margin-top: 10px;       /* Keeps space for your fixed nav */
+        margin-top: 80px;       /* Keeps space for your fixed nav */
     }
 
     /* 2. Adjust the Video background to fit the new height */
