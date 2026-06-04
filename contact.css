@@ -4,13 +4,14 @@
 
 /* 1. Main Background Container */
 .contact-container {
+   background: 'images/bg2.mp4';
     position: relative;
     min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 120px 8% 60px; /* Generous top padding for fixed nav bar */
+    padding: 120px 8% 0px; /* Generous top padding for fixed nav bar */
     box-sizing: border-box;
     overflow: hidden;
 }
