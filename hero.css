@@ -54,20 +54,7 @@
 
 .cta-button {
     margin-top: 40px;
-    background-color: transparent;
-    color: white;
-    padding: 15px 35px;
-    text-decoration: none;
-    font-family: 'Fredoka One', cursive;
-    font-size: 1.2rem;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-.cta-button2 {
-    margin-top: 40px;
-    background-color: rgb(207, 49, 49);
+    background-color: rgba(161, 0, 0, 0.6);
     color: white;
     padding: 15px 35px;
     text-decoration: none;
