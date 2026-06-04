@@ -92,7 +92,7 @@ nav {
 
   .features{
         position: relative;
-        height: auto;
+        height: 0 !important;
         opacity: 1;
         visibility: visible;
         overflow: visible;
