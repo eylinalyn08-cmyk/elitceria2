@@ -80,29 +80,29 @@
         <!-- Automated Form Submission Box -->
         <div class="contact-form">
             <form action="https://formsubmit.co/eylinalyn08@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="https://eylinalyn08-cmyk.github.io/elitceria2/index.html">
-                <!-- Formsubmit.co Configuration Setup Values -->
+                <!--<input type="hidden" name="_next" value="https://eylinalyn08-cmyk.github.io/elitceria2/index.html">
+                 Formsubmit.co Configuration Setup Values -->
                 <input type="hidden" name="_subject" value="New Enrollment Inquiry!">
                 <input type="hidden" name="_template" value="table">
                 
                 <div class="form-group">
                     <label for="parent_name">Parent's Name</label>
-                    <input type="text" id="parent_name" name="parent_name" placeholder="Your full name" required>
+                    <input type="text" id="Parent Name" name="parent_name" placeholder="Your full name" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="email@example.com" autocomplete="off" required>
+                    <input type="email" id="Email" name="email" placeholder="email@example.com" autocomplete="off" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="child_age">Child's Age</label>
-                    <input type="number" id="child_age" name="child_age" placeholder="e.g. 4">
+                    <input type="number" id="Child Age" name="child_age" placeholder="e.g. 4">
                 </div>
                 
                 <div class="form-group">
                     <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="How can we help you?"></textarea>
+                    <textarea id="message" name="Message" rows="4" placeholder="How can we help you?"></textarea>
                 </div>
                 
                 <button type="submit" class="submit-btn">Send Message ✨</button>
@@ -187,6 +187,32 @@ window.addEventListener('scroll', () => {
 
   hero.style.opacity = opacity;
 });
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // 1. Stop the page from reloading/redirecting immediately
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    // 2. Send the data to FormSubmit in the background
+    fetch(form.action, {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        // 3. Show the success popup message
+        alert("Thank you! Your message was successfully submitted.");
+
+        // 4. Redirect the user to your home page after they click "OK"
+        window.location.href = "https://eylinalyn08-cmyk.github.io/elitceria2/index.html"; 
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Something went wrong. Please try again.");
+    });
+});
+</script>
     </script>
     <button id="backToTopBtn" onclick="scrollToTop()">➔</button>
     <script src="scrolltToTop.js"></script>
