@@ -142,7 +142,8 @@
 .cert-item h3 {
     color: #ff6b6b; /* Soft red for headings */
     margin-bottom: 15px;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-size: 2rem;
 }
 
 .cert-item p {
