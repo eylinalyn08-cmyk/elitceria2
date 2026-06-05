@@ -7,7 +7,7 @@
 }
 
 .section-title {
-    font-family: 'Fredoka One', cursive; /* Kindergarten style title */
+    /*font-family: 'Fredoka One', cursive;  Kindergarten style title */
     font-size: 3rem;
     margin-bottom: 50px;
     color: var(--primary-color, #ff6b6b);
@@ -97,7 +97,7 @@
 
 /* --- Card Titles --- */
 .class-card h3 {
-    font-family: 'Fredoka One', cursive;
+    /*font-family: 'Fredoka One', cursive;*/
     font-size: 1.5rem;
     margin-top: 15px;
     color: #333;
