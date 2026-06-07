@@ -1,5 +1,5 @@
 /* Hero Section */
-.hero/*, .hero-about, .hero-program*/{
+.hero, .hero-about, .hero-program{
     position: relative;
     height: 100vh;
     width: 100%;
@@ -9,7 +9,9 @@
     overflow: hidden;
     top: 120px;
 }
-
+.hero-about, .hero-program{
+    top: 0;
+}
 .hero-video {
     position: absolute;
     top: 50%;
