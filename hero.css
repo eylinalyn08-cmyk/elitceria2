@@ -1,5 +1,5 @@
 /* Hero Section */
-.hero, .hero-about, .hero-program{
+.hero{
     position: relative;
     height: 100vh;
     width: 100%;
@@ -7,11 +7,11 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    top: 120px;
+    /*top: 120px;*/
 }
-.hero-about, .hero-program{
+/*.hero-about, .hero-program{
     top: 0;
-}
+}*/
 .hero-video {
     position: absolute;
     top: 50%;
