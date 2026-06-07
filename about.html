@@ -213,7 +213,7 @@
         }
 
 window.addEventListener('scroll', () => {
-  const hero-about = document.querySelector('.hero-about');
+  const hero = document.querySelector('.hero-about');
   const scrollPosition = window.scrollY;
 
   // Adjust the number (800) to control how fast it fades out
@@ -223,7 +223,7 @@ window.addEventListener('scroll', () => {
   if (opacity < 0) opacity = 0;
   if (opacity > 1) opacity = 1;
 
-  hero.style.opacity = opacity;
+  hero-about.style.opacity = opacity;
 });
     </script>
     <button id="backToTopBtn" onclick="scrollToTop()">➔</button>
