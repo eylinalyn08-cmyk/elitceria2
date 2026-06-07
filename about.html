@@ -63,7 +63,7 @@
         </ul>
     </nav>
 
-    <header class="hero-about">
+    <header class="hero">
         <img class="hero-video" src="images/G.jpg" alt="About Us">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -213,7 +213,7 @@
         }
 
 window.addEventListener('scroll', () => {
-  const hero = document.querySelector('.hero-about');
+  const hero = document.querySelector('.hero');
   const scrollPosition = window.scrollY;
 
   // Adjust the number (800) to control how fast it fades out
@@ -223,7 +223,7 @@ window.addEventListener('scroll', () => {
   if (opacity < 0) opacity = 0;
   if (opacity > 1) opacity = 1;
 
-  hero-about.style.opacity = opacity;
+  hero.style.opacity = opacity;
 });
     </script>
     <button id="backToTopBtn" onclick="scrollToTop()">➔</button>
