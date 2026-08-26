@@ -97,98 +97,57 @@
         </div>
     </header> -->
 
-  <div class="page">
-  <section class="hero">
-    <div class="hero-content">
-      <div class="kite">🪁</div>
-      <h1>Future Leaders</h1>
-      <div class="tagline">Learn • Play • Create • Lead!</div>
-      <p>
-        A cheerful kindergarten programme designed to help children grow in confidence,
-        creativity, communication, movement, good manners and everyday leadership skills.
-      </p>
-      <div class="pill-row">
-        <div class="pill p1">🌟 Learn</div><div class="pill p2">🎨 Create</div>
-        <div class="pill p3">🤝 Care</div><div class="pill p4">💡 Explore</div>
-      </div>
-    </div>
-  </section>
-
-  <h2 class="section-title2"><span>What We Learn</span></h2>
-  <section class="grid">
-    <article class="card blue" onclick="openModal('📚','Language Arts','Fun English & Bahasa Melayu activities that build speaking, listening and early literacy skills.')">
-      <div class="icon">📚</div><h3>Language Arts</h3><p>English & Bahasa Melayu</p>
-    </article>
-    <article class="card pink" onclick="openModal('🔤','Phonics','Playful sound and letter activities to support early reading.')">
-      <div class="icon">🔤</div><h3>Phonics</h3><p>English & Bahasa Melayu</p>
-    </article>
-    <article class="card green" onclick="openModal('🔢','Math & Science','Counting, patterns, simple problem solving and discovery through play.')">
-      <div class="icon">🔢</div><h3>Math & Science</h3><p>Count, explore and discover!</p>
-    </article>
-    <article class="card purple" onclick="openModal('🎵','Music & Movement','Sing, dance, move and express ideas through music.')">
-      <div class="icon">🎵</div><h3>Music & Movement</h3><p>Move, sing and have fun!</p>
-    </article>
-    <article class="card orange" onclick="openModal('🎨','Arts & Crafts','Creative hands-on projects that let little artists imagine and make.')">
-      <div class="icon">🎨</div><h3>Arts & Crafts</h3><p>Make something wonderful.</p>
-    </article>
-    <article class="card blue" onclick="openModal('🤸','Indoor & Sensory Play','Safe play experiences that develop coordination, curiosity and confidence.')">
-      <div class="icon">🤸</div><h3>Indoor & Sensory Play</h3><p>Touch, move and explore.</p>
-    </article>
-    <article class="card green" onclick="openModal('📖','Hadith of the Week','Simple values and good manners introduced in a child-friendly way.')">
-      <div class="icon">📖</div><h3>Hadith of the Week</h3><p>Learn kindness and good character.</p>
-    </article>
-    <article class="card pink" onclick="openModal('🌙','Hafazan Surahs','Gentle memorisation practice for short surahs.')">
-      <div class="icon">🌙</div><h3>Hafazan Surahs</h3><p>Small steps, big smiles.</p>
-    </article>
-    <article class="card purple" onclick="openModal('🕌','Daily Doas','Learn simple daily duas for everyday routines.')">
-      <div class="icon">🕌</div><h3>Daily Doas</h3><p>Remember Allah in daily life.</p>
-    </article>
-    <article class="card orange" onclick="openModal('☀️','Fardhu Ain','Age-appropriate introduction to essential Islamic knowledge and practice.')">
-      <div class="icon">☀️</div><h3>Fardhu Ain</h3><p>Learn through simple activities.</p>
-    </article>
-    <article class="card blue" onclick="openModal('✍️','Jawi & Arabic','Recognise letters and practise writing in a fun way.')">
-      <div class="icon">✍️</div><h3>Jawi & Arabic</h3><p>Letters, sounds and writing.</p>
-    </article>
-    <article class="card green" onclick="openModal('🧼','Iqra’ & Solat','Build early familiarity with Iqra’ and simple prayer routines.')">
-      <div class="icon">🧼</div><h3>Iqra’ & Solat</h3><p>Learn with guidance and practice.</p>
-    </article>
-  </section>
-
-  <h2 class="section-title"><span>Little Leader Activities</span></h2>
-  <section class="activities">
-    <div class="panel">
-      <h3>🎯 Tap an activity to discover!</h3>
-      <div class="activity-list">
-        <div class="activity" onclick="showMessage('🎨 Creative Day: Let your imagination shine!')"><span class="emoji">🎨</span><div><strong>Creative Day</strong><small>Make, colour and create.</small></div></div>
-        <div class="activity" onclick="showMessage('🏃 Annual Sports Day: Run, jump and cheer for friends!')"><span class="emoji">🏃</span><div><strong>Annual Sports Day</strong><small>Move your body and enjoy teamwork.</small></div></div>
-        <div class="activity" onclick="showMessage('🌏 Cultural Day: Discover different cultures and traditions.')"><span class="emoji">🌏</span><div><strong>Cultural Day</strong><small>Celebrate diversity together.</small></div></div>
-        <div class="activity" onclick="showMessage('💝 Charity Project: Learn to care, share and help others.')"><span class="emoji">💝</span><div><strong>Charity Project</strong><small>Little hands can make a big difference.</small></div></div>
-        <div class="activity" onclick="showMessage('💧 Clean & Conducive Environment: Keep our learning space neat and happy.')"><span class="emoji">💧</span><div><strong>Clean & Conducive Environment</strong><small>Care for our classroom and surroundings.</small></div></div>
-        <div class="activity" onclick="showMessage('🥗 Healthy choices: Learn about filtered water, air-conditioned comfort and a full breakfast.')"><span class="emoji">🥗</span><div><strong>Healthy & Comfortable</strong><small>Supportive routines for little learners.</small></div></div>
-      </div>
-    </div>
-    <aside class="day-box">
-      <div>🌟</div>
-      <div class="big" id="points">0</div>
-      <div>Little Leader Stars</div>
-      <p>Click the button whenever you complete a kind or helpful action!</p>
-      <button onclick="addStar()">⭐ I Helped!</button>
-      <p id="starText">Let's collect stars!</p>
-    </aside>
-  </section>
-
-  <section class="surah">
-    <h2>🌙 My Little Learning Corner</h2>
-    <p>Choose something to practise today.</p>
-    <div class="surah-buttons">
-      <button onclick="showMessage('📖 Read a short story together.')">📖 Story Time</button>
-      <button onclick="showMessage('🔤 Practise 3 letters or sounds.')">🔤 Letter Time</button>
-      <button onclick="showMessage('🤲 Recite a simple daily doa.')">🤲 Doa Time</button>
-      <button onclick="showMessage('🧩 Try a simple counting or matching game.')">🧩 Thinking Time</button>
-    </div>
-    <div id="message"></div>
-  </section>
-</div>
+  <div class="elementor-element elementor-element-e1e13e5 h3-box-programs e-flex e-con-boxed e-con e-parent" data-id="e1e13e5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6074969 e-con-full e-flex e-con e-child" data-id="6074969" data-element_type="container">
+		<div class="elementor-element elementor-element-57033d2 e-con-full elementor-hidden-mobile_extra elementor-hidden-mobile e-flex e-con e-child" data-id="57033d2" data-element_type="container">
+				<div class="elementor-element elementor-element-79d279e elementor-widget elementor-widget-bzotech-heading-global" data-id="79d279e" data-element_type="widget" data-widget_type="bzotech-heading-global.default">
+				<div class="elementor-widget-container">
+					<h2 class="e-main-color2  container-flex-e elbzotech-heading-global font-title text-css-e font-semibold  title48 color-title elbzotech-heading-global-style1">Engaging Learning Programs<span class="type-title_shadow"></span></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-10f519c elementor-widget elementor-widget-bzotech-heading-global" data-id="10f519c" data-element_type="widget" data-widget_type="bzotech-heading-global.default">
+				<div class="elementor-widget-container">
+					<h2 class="e-main-color  container-flex-e elbzotech-heading-global font-title text-css-e font-semibold  title48 color-title elbzotech-heading-global-style1">Our Educational Adventures<span class="type-title_shadow"></span></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5a3ec93 elementor-widget elementor-widget-bzotech-heading-global" data-id="5a3ec93" data-element_type="widget" data-widget_type="bzotech-heading-global.default">
+				<div class="elementor-widget-container">
+					<div class="elbzotech-text-editor-global text-css-e "><p>Our kindergarten is designed to provide a nurturing and stimulating learning environment for children. Each classroom is thoughtfully arranged to encourage exploration, creativity.</p></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6341949 e-con-full e-flex e-con e-child" data-id="6341949" data-element_type="container">
+				<div class="elementor-element elementor-element-3825bec heading-shadow elementor-widget elementor-widget-bzotech-heading-global" data-id="3825bec" data-element_type="widget" data-widget_type="bzotech-heading-global.default">
+				<div class="elementor-widget-container">
+					<div class="elbzotech-text-editor-global text-css-e e-main-color"><p>Programs</p></div>				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-0ff05ff e-con-full e-flex e-con e-child" data-id="0ff05ff" data-element_type="container">
+				<div class="elementor-element elementor-element-f7b9ef4 elementor-widget elementor-widget-bzotech-slider-global" data-id="f7b9ef4" data-element_type="widget" data-widget_type="bzotech-slider-global.default">
+				<div class="elementor-widget-container">
+					
+<div class="elbzotech-wrapper-slider-global elbzotech-wrapper-slider-global-category2 display-swiper-navi-group1 display-swiper-pagination- display-swiper-scrollbar- auto-show-scrollbar- slider-type-">
+    <div class="elbzotech-swiper-slider swiper-container slider-wrap popup-gallery swiper-initialized swiper-horizontal swiper-pointer-events" data-items-custom="" data-items="3" data-items-widescreen="" data-items-laptop="" data-items-tablet-extra="" data-items-tablet="2" data-items-mobile-extra="2" data-items-mobile="1" data-space="30" data-space-widescreen="" data-space-laptop="" data-space-tablet-extra="" data-space-tablet="" data-space-mobile-extra="" data-space-mobile="" data-effect="" data-column="1" data-auto="" data-center="" data-loop="yes" data-speed="" data-navigation="group1" data-pagination="" data-slidertype="">        <div class="swiper-wrapper" id="swiper-wrapper-a8f37d0873d106de3" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-1325.33px, 0px, 0px);"><div class="swiper-slide wslider-item elementor-repeater-item-e3ebcf3 swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="3 / 5" style="width: 301.333px; margin-right: 30px;"><div class=" item-slider-global-category2"><div class="cate-img overflow-hidden text-center elementor-animation-bob"><a class="adv-thumb-link-cate adv-thumb-link" href="https://kidscenter.bzotech.com/product-category/3-4-years/"><img loading="lazy" decoding="async" width="370" height="370" src="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3.jpg" class="attachment-full size-full" alt="" srcset="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3.jpg 370w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3-300x300.jpg 300w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3-150x150.jpg 150w" sizes="(max-width: 370px) 100vw, 370px"></a></div>
+                            <div class="info "><div class="cate-title"><h2 class="text-center font-semibold title20 text-capitalize font-title"><a class="main-color" href="https://kidscenter.bzotech.com/product-category/3-4-years/">Active Adventures<br>(3 - 4 years)</a></h2><span class="cat-count hidden">3 items</span></div><p class="desc text-center">Children in this program engage in physical activities.</p></div></div></div><div class="swiper-slide wslider-item elementor-repeater-item-c9d6ef9 swiper-slide-duplicate" data-swiper-slide-index="3" role="group" aria-label="4 / 5" style="width: 301.333px; margin-right: 30px;"><div class=" item-slider-global-category2"><div class="cate-img overflow-hidden text-center elementor-animation-bob"><a class="adv-thumb-link-cate adv-thumb-link" href="https://kidscenter.bzotech.com/product-category/4-6-years/"><img loading="lazy" decoding="async" width="370" height="370" src="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro4.jpg" class="attachment-full size-full" alt="" srcset="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro4.jpg 370w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro4-300x300.jpg 300w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro4-150x150.jpg 150w" sizes="(max-width: 370px) 100vw, 370px"></a></div>
+                            <div class="info "><div class="cate-title"><h2 class="text-center font-semibold title20 text-capitalize font-title"><a class="main-color" href="https://kidscenter.bzotech.com/product-category/4-6-years/">Imaginative Innovators<br>(4 - 5 years)</a></h2><span class="cat-count hidden">4 items</span></div><p class="desc text-center">Encourages problem-solving and critical thinking.</p></div></div></div><div class="swiper-slide wslider-item elementor-repeater-item-d2ef1bf swiper-slide-duplicate" data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 301.333px; margin-right: 30px;"><div class=" item-slider-global-category2"><div class="cate-img overflow-hidden text-center elementor-animation-bob"><a class="adv-thumb-link-cate adv-thumb-link" href="https://kidscenter.bzotech.com/product-category/all/"><img loading="lazy" decoding="async" width="370" height="370" src="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro5.jpg" class="attachment-full size-full" alt="" srcset="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro5.jpg 370w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro5-300x300.jpg 300w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro5-150x150.jpg 150w" sizes="(max-width: 370px) 100vw, 370px"></a></div>
+                            <div class="info "><div class="cate-title"><h2 class="text-center font-semibold title20 text-capitalize font-title"><a class="main-color" href="https://kidscenter.bzotech.com/product-category/all/">Outdoor Play<br>(All Ages)</a></h2><span class="cat-count hidden">10 items</span></div><p class="desc text-center">Children explore the outdoors, learning about nature.</p></div></div></div>            <div class="swiper-slide wslider-item elementor-repeater-item-f01ed5c swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 301.333px; margin-right: 30px;"><div class=" item-slider-global-category2"><div class="cate-img overflow-hidden text-center elementor-animation-bob"><a class="adv-thumb-link-cate adv-thumb-link" href="https://kidscenter.bzotech.com/product-category/1-2-years/"><img loading="lazy" decoding="async" width="370" height="370" src="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro1.jpg" class="attachment-full size-full" alt="" srcset="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro1.jpg 370w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro1-300x300.jpg 300w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro1-150x150.jpg 150w" sizes="(max-width: 370px) 100vw, 370px"></a></div>
+                            <div class="info "><div class="cate-title"><h2 class="text-center font-semibold title20 text-capitalize font-title"><a class="main-color" href="https://kidscenter.bzotech.com/product-category/1-2-years/">Little Explores<br> (1,5 - 2 years)</a></h2><span class="cat-count hidden">3 items</span></div><p class="desc text-center">Toddlers engage in sensory activities that promote curiosity.</p></div></div></div><div class="swiper-slide wslider-item elementor-repeater-item-e7c50dd bzotech-active-swiper swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 5" style="width: 301.333px; margin-right: 30px;"><div class=" item-slider-global-category2"><div class="cate-img overflow-hidden text-center elementor-animation-bob"><a class="adv-thumb-link-cate adv-thumb-link" href="https://kidscenter.bzotech.com/product-category/2-3-years/"><img loading="lazy" decoding="async" width="370" height="370" src="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro2.jpg" class="attachment-full size-full" alt="" srcset="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro2.jpg 370w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro2-300x300.jpg 300w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro2-150x150.jpg 150w" sizes="(max-width: 370px) 100vw, 370px"></a></div>
+                            <div class="info "><div class="cate-title"><h2 class="text-center font-semibold title20 text-capitalize font-title"><a class="main-color" href="https://kidscenter.bzotech.com/product-category/2-3-years/">Creative Learners<br>(2 - 3 years)</a></h2><span class="cat-count hidden">4 items</span></div><p class="desc text-center">Emphasizes creative expression through art, music.</p></div></div></div><div class="swiper-slide wslider-item elementor-repeater-item-e3ebcf3 bzotech-active-swiper swiper-slide-next" data-swiper-slide-index="2" role="group" aria-label="3 / 5" style="width: 301.333px; margin-right: 30px;"><div class=" item-slider-global-category2"><div class="cate-img overflow-hidden text-center elementor-animation-bob"><a class="adv-thumb-link-cate adv-thumb-link" href="https://kidscenter.bzotech.com/product-category/3-4-years/"><img loading="lazy" decoding="async" width="370" height="370" src="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3.jpg" class="attachment-full size-full" alt="" srcset="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3.jpg 370w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3-300x300.jpg 300w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3-150x150.jpg 150w" sizes="(max-width: 370px) 100vw, 370px"></a></div>
+                            <div class="info "><div class="cate-title"><h2 class="text-center font-semibold title20 text-capitalize font-title"><a class="main-color" href="https://kidscenter.bzotech.com/product-category/3-4-years/">Active Adventures<br>(3 - 4 years)</a></h2><span class="cat-count hidden">3 items</span></div><p class="desc text-center">Children in this program engage in physical activities.</p></div></div></div><div class="swiper-slide wslider-item elementor-repeater-item-c9d6ef9 bzotech-active-swiper" data-swiper-slide-index="3" role="group" aria-label="4 / 5" style="width: 301.333px; margin-right: 30px;"><div class=" item-slider-global-category2"><div class="cate-img overflow-hidden text-center elementor-animation-bob"><a class="adv-thumb-link-cate adv-thumb-link" href="https://kidscenter.bzotech.com/product-category/4-6-years/"><img loading="lazy" decoding="async" width="370" height="370" src="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro4.jpg" class="attachment-full size-full" alt="" srcset="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro4.jpg 370w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro4-300x300.jpg 300w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro4-150x150.jpg 150w" sizes="(max-width: 370px) 100vw, 370px"></a></div>
+                            <div class="info "><div class="cate-title"><h2 class="text-center font-semibold title20 text-capitalize font-title"><a class="main-color" href="https://kidscenter.bzotech.com/product-category/4-6-years/">Imaginative Innovators<br>(4 - 5 years)</a></h2><span class="cat-count hidden">4 items</span></div><p class="desc text-center">Encourages problem-solving and critical thinking.</p></div></div></div><div class="swiper-slide wslider-item elementor-repeater-item-d2ef1bf" data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 301.333px; margin-right: 30px;"><div class=" item-slider-global-category2"><div class="cate-img overflow-hidden text-center elementor-animation-bob"><a class="adv-thumb-link-cate adv-thumb-link" href="https://kidscenter.bzotech.com/product-category/all/"><img loading="lazy" decoding="async" width="370" height="370" src="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro5.jpg" class="attachment-full size-full" alt="" srcset="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro5.jpg 370w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro5-300x300.jpg 300w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro5-150x150.jpg 150w" sizes="(max-width: 370px) 100vw, 370px"></a></div>
+                            <div class="info "><div class="cate-title"><h2 class="text-center font-semibold title20 text-capitalize font-title"><a class="main-color" href="https://kidscenter.bzotech.com/product-category/all/">Outdoor Play<br>(All Ages)</a></h2><span class="cat-count hidden">10 items</span></div><p class="desc text-center">Children explore the outdoors, learning about nature.</p></div></div></div>        <div class="swiper-slide wslider-item elementor-repeater-item-f01ed5c swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 301.333px; margin-right: 30px;"><div class=" item-slider-global-category2"><div class="cate-img overflow-hidden text-center elementor-animation-bob"><a class="adv-thumb-link-cate adv-thumb-link" href="https://kidscenter.bzotech.com/product-category/1-2-years/"><img loading="lazy" decoding="async" width="370" height="370" src="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro1.jpg" class="attachment-full size-full" alt="" srcset="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro1.jpg 370w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro1-300x300.jpg 300w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro1-150x150.jpg 150w" sizes="(max-width: 370px) 100vw, 370px"></a></div>
+                            <div class="info "><div class="cate-title"><h2 class="text-center font-semibold title20 text-capitalize font-title"><a class="main-color" href="https://kidscenter.bzotech.com/product-category/1-2-years/">Little Explores<br> (1,5 - 2 years)</a></h2><span class="cat-count hidden">3 items</span></div><p class="desc text-center">Toddlers engage in sensory activities that promote curiosity.</p></div></div></div><div class="swiper-slide wslider-item elementor-repeater-item-e7c50dd swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" role="group" aria-label="2 / 5" style="width: 301.333px; margin-right: 30px;"><div class=" item-slider-global-category2"><div class="cate-img overflow-hidden text-center elementor-animation-bob"><a class="adv-thumb-link-cate adv-thumb-link" href="https://kidscenter.bzotech.com/product-category/2-3-years/"><img loading="lazy" decoding="async" width="370" height="370" src="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro2.jpg" class="attachment-full size-full" alt="" srcset="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro2.jpg 370w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro2-300x300.jpg 300w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro2-150x150.jpg 150w" sizes="(max-width: 370px) 100vw, 370px"></a></div>
+                            <div class="info "><div class="cate-title"><h2 class="text-center font-semibold title20 text-capitalize font-title"><a class="main-color" href="https://kidscenter.bzotech.com/product-category/2-3-years/">Creative Learners<br>(2 - 3 years)</a></h2><span class="cat-count hidden">4 items</span></div><p class="desc text-center">Emphasizes creative expression through art, music.</p></div></div></div><div class="swiper-slide wslider-item elementor-repeater-item-e3ebcf3 swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="3 / 5" style="width: 301.333px; margin-right: 30px;"><div class=" item-slider-global-category2"><div class="cate-img overflow-hidden text-center elementor-animation-bob"><a class="adv-thumb-link-cate adv-thumb-link" href="https://kidscenter.bzotech.com/product-category/3-4-years/"><img loading="lazy" decoding="async" width="370" height="370" src="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3.jpg" class="attachment-full size-full" alt="" srcset="https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3.jpg 370w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3-300x300.jpg 300w, https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h3-pro3-150x150.jpg 150w" sizes="(max-width: 370px) 100vw, 370px"></a></div>
+                            <div class="info "><div class="cate-title"><h2 class="text-center font-semibold title20 text-capitalize font-title"><a class="main-color" href="https://kidscenter.bzotech.com/product-category/3-4-years/">Active Adventures<br>(3 - 4 years)</a></h2><span class="cat-count hidden">3 items</span></div><p class="desc text-center">Children in this program engage in physical activities.</p></div></div></div></div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            <div class="bzotech-swiper-navi">
+            <div class="swiper-button-nav swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a8f37d0873d106de3"><i aria-hidden="true" class=" las la-arrow-right"></i></div>
+            <div class="swiper-button-nav swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a8f37d0873d106de3"><i aria-hidden="true" class=" las la-arrow-left"></i></div>
+        </div>
+            </div>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
 
     <!-- Master Brand Footer Block Layout -->
     <footer class="main-footer">
