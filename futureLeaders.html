@@ -97,23 +97,6 @@
         </div>
     </header> -->
 
-    <!-- Core School Highlights Value Propositions Grid -->
-    <section class="hero">
-    <div class="hero-content">
-      <div class="kite">🪁</div>
-      <h1>Future Leaders</h1>
-      <div class="tagline">Learn • Play • Create • Lead!</div>
-      <p>
-        A cheerful kindergarten programme designed to help children grow in confidence,
-        creativity, communication, movement, good manners and everyday leadership skills.
-      </p>
-      <div class="pill-row">
-        <div class="pill p1">🌟 Learn</div><div class="pill p2">🎨 Create</div>
-        <div class="pill p3">🤝 Care</div><div class="pill p4">💡 Explore</div>
-      </div>
-    </div>
-  </section>
-
   <div class="page">
   <section class="hero">
     <div class="hero-content">
@@ -131,7 +114,7 @@
     </div>
   </section>
 
-  <h2 class="section-title"><span>What We Learn</span></h2>
+  <h2 class="section-title2"><span>What We Learn</span></h2>
   <section class="grid">
     <article class="card blue" onclick="openModal('📚','Language Arts','Fun English & Bahasa Melayu activities that build speaking, listening and early literacy skills.')">
       <div class="icon">📚</div><h3>Language Arts</h3><p>English & Bahasa Melayu</p>
@@ -271,13 +254,8 @@ window.addEventListener('scroll', () => {
 
   hero.style.opacity = opacity;
 });
-    </script>
 
-    <button id="backToTopBtn" onclick="scrollToTop()">➔</button>
-    <script src="scrolltToTop.js"></script>
-
-    <script>
-  let points=0;
+        let points=0;
   function addStar(){
     points++;
     document.getElementById('points').textContent=points;
@@ -295,7 +273,11 @@ window.addEventListener('scroll', () => {
     if(!e || e.target.id==='modal' || e.target.classList.contains('close'))
       document.getElementById('modal').classList.remove('show');
   }
-</script>
+    </script>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">➔</button>
+    <script src="scrolltToTop.js"></script>
+
     <!--<script>
         const backToTopBtn = document.getElementById('backToTopBtn');
 
