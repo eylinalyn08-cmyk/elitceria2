@@ -1,3 +1,13 @@
+:root{
+    --blue:#3f7cff; --yellow:#ffd84d; --pink:#ff79a8; --green:#55c985;
+    --purple:#9b78ff; --orange:#ff9b54; --ink:#26324a; --cream:#fffaf0;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;font-family:"Trebuchet MS",Arial,sans-serif;color:var(--ink);
+    background:linear-gradient(180deg,#eaf5ff 0,#fff9ee 48%,#eefbf4 100%);
+  }
+  .page{max-width:1150px;margin:auto;padding:22px}
 .hero{
     position:relative;overflow:hidden;background:white;border-radius:34px;padding:38px 34px 30px;
     box-shadow:0 15px 40px #52709b22;border:5px solid #fff;
