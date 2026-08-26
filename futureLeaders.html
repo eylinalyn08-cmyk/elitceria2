@@ -234,6 +234,25 @@
     </footer>
 
     <script>
+let points=0;
+  function addStar(){
+    points++;
+    document.getElementById('points').textContent=points;
+    const messages=['Great job! 🌟','You are helpful! 💛','Wonderful little leader! 🎉','Keep shining! ✨','You made someone happy! 😊'];
+    document.getElementById('starText').textContent=messages[(points-1)%messages.length];
+  }
+  function showMessage(text){document.getElementById('message').textContent=text}
+  function openModal(icon,title,text){
+    document.getElementById('modalIcon').textContent=icon;
+    document.getElementById('modalTitle').textContent=title;
+    document.getElementById('modalText').textContent=text;
+    document.getElementById('modal').classList.add('show');
+  }
+  function closeModal(e){
+    if(!e || e.target.id==='modal' || e.target.classList.contains('close'))
+      document.getElementById('modal').classList.remove('show');
+  }
+        
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
         }
@@ -255,24 +274,7 @@ window.addEventListener('scroll', () => {
   hero.style.opacity = opacity;
 });
 
-        let points=0;
-  function addStar(){
-    points++;
-    document.getElementById('points').textContent=points;
-    const messages=['Great job! 🌟','You are helpful! 💛','Wonderful little leader! 🎉','Keep shining! ✨','You made someone happy! 😊'];
-    document.getElementById('starText').textContent=messages[(points-1)%messages.length];
-  }
-  function showMessage(text){document.getElementById('message').textContent=text}
-  function openModal(icon,title,text){
-    document.getElementById('modalIcon').textContent=icon;
-    document.getElementById('modalTitle').textContent=title;
-    document.getElementById('modalText').textContent=text;
-    document.getElementById('modal').classList.add('show');
-  }
-  function closeModal(e){
-    if(!e || e.target.id==='modal' || e.target.classList.contains('close'))
-      document.getElementById('modal').classList.remove('show');
-  }
+        
     </script>
 
     <button id="backToTopBtn" onclick="scrollToTop()">➔</button>
