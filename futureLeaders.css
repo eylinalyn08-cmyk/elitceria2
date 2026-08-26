@@ -25,8 +25,8 @@
   .pill{padding:10px 16px;border-radius:999px;font-weight:800;color:white}
   .p1{background:var(--blue)}.p2{background:var(--pink)}.p3{background:var(--green)}.p4{background:var(--purple)}
 
-  .section-title{text-align:center;margin:42px 0 20px;font-size:32px;color:#34415c}
-  .section-title span{display:inline-block;background:var(--yellow);padding:7px 17px;border-radius:18px;transform:rotate(-1deg)}
+  .section-title2{text-align:center;margin:42px 0 20px;font-size:32px;color:#34415c}
+  .section-title2 span{display:inline-block;background:var(--yellow);padding:7px 17px;border-radius:18px;transform:rotate(-1deg)}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
   .card{
     background:#fff;border-radius:25px;padding:22px;min-height:170px;
