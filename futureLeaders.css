@@ -1,0 +1,74 @@
+.hero{
+    position:relative;overflow:hidden;background:white;border-radius:34px;padding:38px 34px 30px;
+    box-shadow:0 15px 40px #52709b22;border:5px solid #fff;
+  }
+  .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;z-index:0}
+  .hero:before{width:190px;height:190px;background:#ffd84d55;right:-55px;top:-65px}
+  .hero:after{width:120px;height:120px;background:#ff79a844;left:-35px;bottom:-45px}
+  .hero-content{position:relative;z-index:1;text-align:center}
+  .kite{font-size:58px;display:inline-block;animation:float 3s ease-in-out infinite}
+  @keyframes float{50%{transform:translateY(-9px) rotate(2deg)}}
+  h1{margin:5px 0 6px;font-size:clamp(34px,6vw,62px);line-height:1;color:#315de0}
+  .tagline{font-size:20px;font-weight:800;color:#ff7b3e;margin:10px auto 20px}
+  .hero p{max-width:760px;margin:auto;font-size:17px;line-height:1.6}
+  .pill-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+  .pill{padding:10px 16px;border-radius:999px;font-weight:800;color:white}
+  .p1{background:var(--blue)}.p2{background:var(--pink)}.p3{background:var(--green)}.p4{background:var(--purple)}
+
+  .section-title{text-align:center;margin:42px 0 20px;font-size:32px;color:#34415c}
+  .section-title span{display:inline-block;background:var(--yellow);padding:7px 17px;border-radius:18px;transform:rotate(-1deg)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .card{
+    background:#fff;border-radius:25px;padding:22px;min-height:170px;
+    box-shadow:0 9px 25px #52627a1c;border:3px solid transparent;
+    transition:.2s;cursor:pointer;position:relative;overflow:hidden
+  }
+  .card:hover{transform:translateY(-6px) rotate(.5deg);box-shadow:0 15px 30px #52627a2b}
+  .card:after{content:"";position:absolute;width:80px;height:80px;border-radius:50%;right:-30px;bottom:-30px;background:#f1f5ff}
+  .icon{font-size:42px}.card h3{margin:8px 0 7px;font-size:20px}.card p{margin:0;line-height:1.45;font-size:14px}
+  .blue{border-color:#c8d8ff}.pink{border-color:#ffd0df}.green{border-color:#c6efd9}.purple{border-color:#ded4ff}.orange{border-color:#ffe0c8}
+
+  .activities{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+  .panel{background:white;border-radius:28px;padding:25px;box-shadow:0 9px 25px #52627a1c}
+  .panel h3{margin-top:0;font-size:24px}
+  .activity-list{display:grid;gap:11px}
+  .activity{
+    display:flex;align-items:center;gap:12px;padding:13px;border-radius:16px;background:#f7f9ff;
+    cursor:pointer;transition:.2s
+  }
+  .activity:hover{background:#edf3ff;transform:translateX(4px)}
+  .activity .emoji{font-size:26px}
+  .activity strong{display:block}.activity small{color:#68738a}
+  .day-box{background:linear-gradient(135deg,#7f6cff,#4c8cff);color:white;border-radius:25px;padding:24px;text-align:center}
+  .day-box .big{font-size:55px;font-weight:900}.day-box p{line-height:1.5}
+  button{
+    border:0;border-radius:999px;padding:12px 18px;font-weight:900;cursor:pointer;
+    background:#fff;color:#405fe0;box-shadow:0 5px 12px #253d8026
+  }
+  button:hover{transform:scale(1.04)}
+
+  .surah{
+    margin-top:20px;background:#fff;border-radius:28px;padding:25px;text-align:center;
+    box-shadow:0 9px 25px #52627a1c
+  }
+  .surah-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:15px}
+  .surah-buttons button{background:#eaf4ff;color:#285bd5}
+  #message{min-height:25px;margin-top:15px;font-weight:800;color:#ff7b3e}
+
+  .footer{
+    margin-top:40px;background:#fff;border-radius:28px;padding:25px;text-align:center;
+    box-shadow:0 9px 25px #52627a1c
+  }
+  .footer strong{color:#315de0}
+  .stars{font-size:27px;letter-spacing:6px;margin-bottom:7px}
+
+  .modal{
+    display:none;position:fixed;inset:0;background:#1e2b4588;z-index:20;
+    align-items:center;justify-content:center;padding:20px
+  }
+  .modal.show{display:flex}
+  .modal-box{background:white;border-radius:30px;max-width:520px;width:100%;padding:30px;text-align:center;box-shadow:0 25px 70px #1115}
+  .modal-icon{font-size:65px}.modal-box h2{color:#315de0}
+  .close{background:#ff79a8;color:white}
+
+  @media(max-width:760px){.activities{grid-template-columns:1fr}.page{padding:12px}.hero{padding:28px 20px}}
