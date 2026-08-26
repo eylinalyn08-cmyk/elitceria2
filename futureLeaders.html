@@ -119,6 +119,23 @@
     </div>
   </section>
 
+  <div class="page">
+  <section class="hero">
+    <div class="hero-content">
+      <div class="kite">🪁</div>
+      <h1>Future Leaders</h1>
+      <div class="tagline">Learn • Play • Create • Lead!</div>
+      <p>
+        A cheerful kindergarten programme designed to help children grow in confidence,
+        creativity, communication, movement, good manners and everyday leadership skills.
+      </p>
+      <div class="pill-row">
+        <div class="pill p1">🌟 Learn</div><div class="pill p2">🎨 Create</div>
+        <div class="pill p3">🤝 Care</div><div class="pill p4">💡 Explore</div>
+      </div>
+    </div>
+  </section>
+
   <h2 class="section-title"><span>What We Learn</span></h2>
   <section class="grid">
     <article class="card blue" onclick="openModal('📚','Language Arts','Fun English & Bahasa Melayu activities that build speaking, listening and early literacy skills.')">
@@ -158,6 +175,42 @@
       <div class="icon">🧼</div><h3>Iqra’ & Solat</h3><p>Learn with guidance and practice.</p>
     </article>
   </section>
+
+  <h2 class="section-title"><span>Little Leader Activities</span></h2>
+  <section class="activities">
+    <div class="panel">
+      <h3>🎯 Tap an activity to discover!</h3>
+      <div class="activity-list">
+        <div class="activity" onclick="showMessage('🎨 Creative Day: Let your imagination shine!')"><span class="emoji">🎨</span><div><strong>Creative Day</strong><small>Make, colour and create.</small></div></div>
+        <div class="activity" onclick="showMessage('🏃 Annual Sports Day: Run, jump and cheer for friends!')"><span class="emoji">🏃</span><div><strong>Annual Sports Day</strong><small>Move your body and enjoy teamwork.</small></div></div>
+        <div class="activity" onclick="showMessage('🌏 Cultural Day: Discover different cultures and traditions.')"><span class="emoji">🌏</span><div><strong>Cultural Day</strong><small>Celebrate diversity together.</small></div></div>
+        <div class="activity" onclick="showMessage('💝 Charity Project: Learn to care, share and help others.')"><span class="emoji">💝</span><div><strong>Charity Project</strong><small>Little hands can make a big difference.</small></div></div>
+        <div class="activity" onclick="showMessage('💧 Clean & Conducive Environment: Keep our learning space neat and happy.')"><span class="emoji">💧</span><div><strong>Clean & Conducive Environment</strong><small>Care for our classroom and surroundings.</small></div></div>
+        <div class="activity" onclick="showMessage('🥗 Healthy choices: Learn about filtered water, air-conditioned comfort and a full breakfast.')"><span class="emoji">🥗</span><div><strong>Healthy & Comfortable</strong><small>Supportive routines for little learners.</small></div></div>
+      </div>
+    </div>
+    <aside class="day-box">
+      <div>🌟</div>
+      <div class="big" id="points">0</div>
+      <div>Little Leader Stars</div>
+      <p>Click the button whenever you complete a kind or helpful action!</p>
+      <button onclick="addStar()">⭐ I Helped!</button>
+      <p id="starText">Let's collect stars!</p>
+    </aside>
+  </section>
+
+  <section class="surah">
+    <h2>🌙 My Little Learning Corner</h2>
+    <p>Choose something to practise today.</p>
+    <div class="surah-buttons">
+      <button onclick="showMessage('📖 Read a short story together.')">📖 Story Time</button>
+      <button onclick="showMessage('🔤 Practise 3 letters or sounds.')">🔤 Letter Time</button>
+      <button onclick="showMessage('🤲 Recite a simple daily doa.')">🤲 Doa Time</button>
+      <button onclick="showMessage('🧩 Try a simple counting or matching game.')">🧩 Thinking Time</button>
+    </div>
+    <div id="message"></div>
+  </section>
+</div>
 
     <!-- Master Brand Footer Block Layout -->
     <footer class="main-footer">
@@ -227,6 +280,27 @@ window.addEventListener('scroll', () => {
 
     <button id="backToTopBtn" onclick="scrollToTop()">➔</button>
     <script src="scrolltToTop.js"></script>
+
+    <script>
+  let points=0;
+  function addStar(){
+    points++;
+    document.getElementById('points').textContent=points;
+    const messages=['Great job! 🌟','You are helpful! 💛','Wonderful little leader! 🎉','Keep shining! ✨','You made someone happy! 😊'];
+    document.getElementById('starText').textContent=messages[(points-1)%messages.length];
+  }
+  function showMessage(text){document.getElementById('message').textContent=text}
+  function openModal(icon,title,text){
+    document.getElementById('modalIcon').textContent=icon;
+    document.getElementById('modalTitle').textContent=title;
+    document.getElementById('modalText').textContent=text;
+    document.getElementById('modal').classList.add('show');
+  }
+  function closeModal(e){
+    if(!e || e.target.id==='modal' || e.target.classList.contains('close'))
+      document.getElementById('modal').classList.remove('show');
+  }
+</script>
     <!--<script>
         const backToTopBtn = document.getElementById('backToTopBtn');
 
